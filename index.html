@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="imgs/rishi-2.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="javascript" href="script.js" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=2314"></script>
+    <script src="https://unpkg.com/react@16.7.0-alpha.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.7.0-alpha.0/umd/react-dom.production.min.js"></script>
+    <style>
+      body {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      #cardbody,
+      #cardbody-1,
+      #cardbody-2,
+      #cardbody-3,
+      #cardbody-4 {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+      }
+    </style>
+    <title>Rishi Jain || Home Page</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <button
+          class="header__button nav-btn-js rotate"
+          type="button"
+          style="outline: none"
+        ></button>
+        <nav class="header__nav nav-js" data-active="false">
+          <ul class="header__menu">
+            <li class="header__menu-item"><a href="#">Experience</a></li>
+            <li class="header__menu-item"><a href="#">Projects</a></li>
+            <li class="header__menu-item"><a href="#">Education</a></li>
+            <li class="header__menu-item"><a href="#">Others</a></li>
+            <li class="header__menu-item"><a href="#">Social</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div style="width: inherit; height: 20vh">
+      <p style="text-justify: center; cursor: pointer">
+        <img
+          id="remoji"
+          src="imgs/rishi-2.png"
+          class="scale-up-center"
+          onclick="toggleImage()"
+          onmouseover="this.src='imgs/rishi-3.png'"
+          onmouseout="this.src='imgs/rishi-2.png'"
+        />
+      </p>
+    </div>
+
+    <div style="width: 99vw; margin-top: 3%">
+      <p class="line typewriter" style="text-align: center; font-weight: 900">
+        Hi, I'm Rishi
+        <!--<<span class="rotator"
+          ><span>a learner</span><span>developer</span
+          ><span>an aspiring PM</span><span>team player</span
+          ><span>bibliophile</span><span>problem solver</span>
+        </span>-->
+      </p>
+    </div>
+
+    <div class="Iam" style="width: 99vw">
+      <b>
+        <div class="innerIam">
+          a learner<br />
+          a developer<br />
+          a team player<br />
+          a problem solver<br />
+          an aspiring PM
+        </div>
+      </b>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #4099ff, #73b4ff);
+              background-image: url('imgs/blue.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1
+              class="card-title text-center"
+              style="
+                font-weight: 1000;
+                color: white;
+                margin: 10px;
+                padding-top: 5px;
+              "
+            >
+              Experience & Live Projects
+            </h1>
+
+            <div class="row justify-content-center">
+              <div class="col-sm-7" style="margin: 0.25%; cursor: pointer">
+                <div class="card h-100" style="border-radius: 2rem">
+                  <div class="card-body">
+                    <div class="ribbon ribbon-top-left">
+                      <span style="background-color: #9a9af7">Experience</span>
+                    </div>
+                    <h2 class="card-title text-center" style="font-weight: 900">
+                      Project Manager
+                    </h2>
+                    <h5 class="card-title text-center" style="color: grey">
+                      I.I.M.U.N.
+                    </h5>
+                    <h6 class="card-title text-center" style="color: grey">
+                      Dec '19 - May '20
+                    </h6>
+                    <p
+                      class="card-text text-left"
+                      style="color: black; font-size: 1.25rem"
+                    >
+                      Managed a team of two and redesigned the entire website of
+                      the organisation including both the front-end and the
+                      back-end. Played the role of Developer as well as of the
+                      Project Manager. Used Bootstrap and Bulma for the
+                      front-end and used MongoDB, NodeJS, ExpressJS for back-end
+                      using Heroku for deployment. Used various other API's such
+                      as CCAvenue, PayPal, Passport, among others.
+                    </p>
+                    <a href="https://kanch91.github.io/iimun-website-desktop/"
+                      ><button type="button" class="btn btn-outline-dark">
+                        Desktop Prototype
+                      </button></a
+                    >
+                    <a href="https://iimun.in/"
+                      ><button type="button" class="btn btn-outline-dark">
+                        Website
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4" style="margin: 0.25%; cursor: pointer">
+                <div class="card h-100" style="border-radius: 2rem">
+                  <div class="card-body">
+                    <div class="ribbon ribbon-top-left">
+                      <span style="background-color: #9a9af7">Experience</span>
+                    </div>
+                    <h2 class="card-title text-center" style="font-weight: 900">
+                      Project Coordinator
+                    </h2>
+                    <h5 class="card-title text-center" style="color: grey">
+                      Winjit Technologies
+                    </h5>
+                    <h6 class="card-title text-center" style="color: grey">
+                      June '21 - Current
+                    </h6>
+                    <p
+                      class="card-text text-left"
+                      style="color: black; font-size: 1.25rem"
+                    >
+                      Worked as an intermediary between PM and the team for
+                      Wholechain – a blockchain based traceability solution for
+                      supply chain management. Followed agile scrum methodology
+                      for the project.
+                    </p>
+                    <a href="https://wholechain.com/"
+                      ><button type="button" class="btn btn-outline-dark">
+                        Wholechain
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="row justify-content-center">
+              <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+                <div class="card h-100" style="border-radius: 2rem">
+                  <div class="card-body">
+                    <div class="ribbon ribbon-top-right">
+                      <span style="background-color: #c2c2f8">Project</span>
+                    </div>
+                    <h2 class="card-title text-center" style="font-weight: 900">
+                      Find A Bed
+                    </h2>
+                    <h5 class="card-title text-center" style="color: grey">
+                      MERN stack, Heroku
+                    </h5>
+                    <p
+                      class="card-text text-left"
+                      style="color: black; font-size: 1.25rem"
+                    >
+                      Designed & coded a website that became the first National
+                      repository of the Covid centres. Added CRUD
+                      functionalities, multilingual translation using google
+                      translate API, payment using Razorpay API, among other
+                      features.
+                    </p>
+                    <a href="https://www.findabed.in/"
+                      ><button type="button" class="btn btn-outline-dark">
+                        Website
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
+                <div class="card h-100" style="border-radius: 2rem">
+                  <div class="card-body">
+                    <div class="ribbon ribbon-top-right">
+                      <span style="background-color: #c2c2f8">Project</span>
+                    </div>
+                    <h2 class="card-title text-center" style="font-weight: 900">
+                      Project Energy
+                    </h2>
+                    <h5 class="card-title text-center" style="color: grey">
+                      Python, Keras, statsmodel, NumPy, SciPy, Pandas,
+                      Scikit-learn
+                    </h5>
+                    <p
+                      class="card-text text-left"
+                      style="color: black; font-size: 1.25rem"
+                    >
+                      Time-series forecasting of electricity load consumption in
+                      the MMR using various classical (SMA, WMA, CMA, EMA),
+                      exponential (SES, DES, TES), statistical models (ARIMA,
+                      SARIMAX) & DL methods (LSTM, GRU, RNN) for univariate and
+                      multivariate datasets using Keras API.
+                    </p>
+                    <a href="https://github.com/kanch91/project-energy"
+                      ><button type="button" class="btn btn-outline-dark">
+                        Repository
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row justify-content-center">
+        <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #ff5370, #ff869a);
+              background-image: url('imgs/red.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1
+              class="card-title text-center"
+              style="
+                font-weight: 1000;
+                color: white;
+                margin: 10px;
+                padding-top: 5px;
+              "
+            >
+              Academia
+            </h1>
+            <div class="card-body" id="cardbody-1">
+              <div class="ribbon ribbon-top-left">
+                <span style="background-color: #fd1e43">Academia</span>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        MBA Tech. (Computer Eng.)
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        NMIMS University
+                      </h5>
+                      <h6 class="card-title text-center" style="color: grey">
+                        June '17 – June '22
+                      </h6>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        Dual degree in Bachelors of Technology and in Masters of
+                        Business Administration
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Business Analytics MM
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Columbia University on edX
+                      </h5>
+                      <h6 class="card-title text-center" style="color: grey">
+                        Nov '20 – Sept '21
+                      </h6>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        ➔ Analytics in Python<br />
+                        ➔ Data, Models & Decisions in BA<br />
+                        ➔ Marketing Analytics<br />
+                        ➔ Demand & Supply Analytics<br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+
+              <div class="row justify-content-center">
+                <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Statistics & Data Science MicroMaster
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Massachusetts Institute of Technology on edX
+                      </h5>
+                      <h6 class="card-title text-center" style="color: grey">
+                        Oct '20 – January '22
+                      </h6>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        ➔ 6.86x: ML w/Python - From linear models to DL<br />
+                        ➔ 6.431x: Probability – The Science of Uncertainty &
+                        Data<br />
+                        ➔ 18.6501x: Fundamental of Statistics<br />
+                        ➔ 6.419x: Data Analysis – Statistical Modeling &
+                        Computation in Applications<br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="row justify-content-center">
+                <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Web Development
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Dr. Angela Yu
+                      </h5>
+                      <div class="text-center">
+                        <a
+                          href="https://www.udemy.com/certificate/UC-cdeb6f11-12fb-483d-82a6-6f0b1b20c67c/"
+                          ><button type="button" class="btn btn-outline-dark">
+                            Certificate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Version Control w/Git
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Atlassian U.
+                      </h5>
+                      <div class="text-center">
+                        <a
+                          href="https://www.coursera.org/account/accomplishments/verify/6TQ4KRQY7AHE"
+                          ><button type="button" class="btn btn-outline-dark">
+                            Certificate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="row justify-content-center">
+                <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Neural Networks & Deep Learning
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        DeepLearning.AI
+                      </h5>
+                      <div class="text-center">
+                        <a
+                          href="https://www.coursera.org/account/accomplishments/verify/6NYYQ7C3LS7F"
+                          ><button type="button" class="btn btn-outline-dark">
+                            Certificate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn text-left" id="cardbodyhover-1">
+              <img
+                src="imgs/arrow.png"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 5px;
+                  background-color: white;
+                  border-radius: 20px;
+                "
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #ffb64d, #ffcb80);
+              background-image: url('imgs/orange.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <button type="button" class="btn text-left" id="cardbodyhover-2">
+              <h1
+                class="card-title text-center"
+                style="
+                  font-weight: 1000;
+                  color: white;
+                  margin: 10px;
+                  padding-top: 5px;
+                "
+              >
+                Positions of Responsibility
+              </h1>
+              <div class="card-body" id="cardbody-2">
+                <div class="ribbon ribbon-top-left">
+                  <span style="background-color: #fc9b13">Others</span>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-sm-11" style="margin: 0.25%">
+                    <div class="card h-100" style="border-radius: 2rem">
+                      <div class="card-body">
+                        <h2
+                          class="card-title text-center"
+                          style="font-weight: 900"
+                        >
+                          I.I.M.U.N.
+                        </h2>
+                        <h5 class="card-title text-center" style="color: grey">
+                          Intern - USG - VP - Sr. Vice-President
+                        </h5>
+                        <h6 class="card-title text-center" style="color: grey">
+                          May '16 – July '21
+                        </h6>
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          ➔ Assisted and planned the organisation strategy
+                          during the pandemic and restructured the operations<br />
+                          ➔ (Youngest) Core Council member: Group responsible
+                          for the overall functioning of the organisation<br />
+                          ➔ Head of the Substance Dept. with a team of over 60
+                          people (5 direct reports) dealing with quality
+                          control, contingent training, content curation &
+                          research<br />
+                          ➔ Liaised with various luminaries & assisted in
+                          organising many major events<br />
+                          ➔ Handled all the technical aspects & projects
+                          including the website and it's weekly updation,
+                          digital platform, among others<br />
+                          ➔ Represented the organisation & led contingents in 9
+                          countries and over 35 cities in India<br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <br />
+
+                <div class="row justify-content-center">
+                  <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
+                    <div class="card h-100" style="border-radius: 2rem">
+                      <div class="card-body">
+                        <h2
+                          class="card-title text-center"
+                          style="font-weight: 900"
+                        >
+                          Student Council
+                        </h2>
+                        <h5 class="card-title text-center" style="color: grey">
+                          President
+                        </h5>
+                        <h6 class="card-title text-center" style="color: grey">
+                          2019 – 2020
+                        </h6>
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          ➔ Set Vision and oversee the functioning of all the
+                          student societies, clubs and committees<br />
+                          ➔ Organise workshops, weekly activities to build a
+                          coding culture and skill development including
+                          organising hackathons, contents, workshops & others<br />
+                          ➔ Liaison & organise Guest Lectures, Competitions,
+                          Elocutions and activities such as NPTEL, mentoring the
+                          students in coding & overall junior-senior
+                          mentoring<br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+                    <div class="card h-100" style="border-radius: 2rem">
+                      <div class="card-body">
+                        <h2
+                          class="card-title text-center"
+                          style="font-weight: 900"
+                        >
+                          Sports Committee
+                        </h2>
+                        <h5 class="card-title text-center" style="color: grey">
+                          President
+                        </h5>
+                        <h6 class="card-title text-center" style="color: grey">
+                          2018 – 2019
+                        </h6>
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          ➔ Set-up & oversaw the functioning of the entire
+                          committee and it’s verticals/departments along with
+                          setting up of the sports facility in the campus<br />
+                          ➔ Promote holistic development via Sports by
+                          organising Monthly Activities & regular events<br />
+                          ➔ Chief Organiser & Coordinator of the Annual Sports
+                          Festival, id est, Prabalya
+                          <br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                src="imgs/arrow.png"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 5px;
+                  background-color: white;
+                  border-radius: 20px;
+                "
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+              background-image: url('imgs/green.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1
+              class="card-title text-center"
+              style="
+                font-weight: 1000;
+                color: white;
+                margin: 10px;
+                padding-top: 5px;
+              "
+            >
+              Mini-Projects
+            </h1>
+            <div class="card-body" id="cardbody">
+              <div class="ribbon ribbon-top-left">
+                <span>Mini-Project</span>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        CRUD App
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Python, SQLite database, TkInter GUI
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        Designed an interface using TkInter GUI with CRUD
+                        functionalities for the details of the students in the
+                        SQLite database using the Python Database API.
+                      </p>
+                      <a href="https://github.com/kanch91/Python-Project"
+                        ><button type="button" class="btn btn-outline-dark">
+                          Repo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Android App
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Java, Android Studio
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        Developed an app to emulate the enigma machine using a
+                        substitution cipher for encryption/decryption & designed
+                        various test-cases.
+                      </p>
+                      <a href=""
+                        ><button type="button" class="btn btn-outline-dark">
+                          Repo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="row justify-content-center">
+                <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        BAMM.101x
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Python mini-projects
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        ➔ String manipulation<br />
+                        ➔ Word count<br />
+                        ➔ Web scraping<br />
+                        ➔ SQL using Python<br />
+                        ➔ Pandas<br />
+                        ➔ Text-mining wikipedia<br />
+                        ➔ Network Algos<br />
+                        ➔ Machine Learning<br />
+                      </p>
+                      <a href="https://github.com/kanch91/analytics-in-python"
+                        ><button type="button" class="btn btn-outline-dark">
+                          Repo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        6.86x
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        ML mini-projects in Python
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        Set of 5 projects completed as a part of the 6.86x
+                        course on Machine Learning – <br />
+                        ➔ Python project<br />
+                        ➔ Automatic Review Analyzer<br />
+                        ➔ Digit Recognition<br />
+                        ➔ Collaborative Filtering via Guassian Mixture<br />
+                        ➔ Text based game using deep Q-network, tabular
+                        Q-Learning & Q-Learning with linear approximation<br />
+                      </p>
+                      <a href="https://github.com/kanch91/ml-projects-6.86x"
+                        ><button type="button" class="btn btn-outline-dark">
+                          Repo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="row justify-content-center">
+                <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
+                  <div class="card h-100" style="border-radius: 2rem">
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Other mini-projects
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Python, Flutter, R
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        Flutter Apps, Social Media Bot, numerical methods
+                        algorithms, movie recommender system based on fuzzey
+                        sets and genetic algorithm, various machine learning
+                        models & others
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn text-left" id="cardbodyhover">
+              <img
+                src="imgs/arrow.png"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 5px;
+                  background-color: white;
+                  border-radius: 20px;
+                "
+              />
+            </button>
+          </div>
+        </div>
+
+        <!--<div class="col-sm-4" style="margin: 0.25%; cursor: pointer">-->
+        <!--<img
+          src="imgs/skills.svg"
+          class="card-img img-fluid"
+          alt="Skills"
+          style="max-width: 90%"
+        />-->
+        <!--<div id="root"></div>
+      </div>-->
+      </div>
+
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #d08bf8, #d9aaf5);
+              background-image: url('imgs/pink.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <button type="button" class="btn text-left" id="cardbodyhover-3">
+              <h1
+                class="card-title text-center"
+                style="
+                  font-weight: 1000;
+                  color: white;
+                  margin: 10px;
+                  padding-top: 5px;
+                "
+              >
+                Social
+              </h1>
+
+              <div class="card-body" id="cardbody-3">
+                <div class="ribbon ribbon-top-left">
+                  <span style="background-color: #c071fc">Social</span>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-sm-5" style="margin: 0.25%">
+                    <a href="https://www.linkedin.com/in/rishijain91/"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/linkedin.svg"
+                          alt="Card image"
+                          style=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-sm-5" style="margin: 0.25%">
+                    <a href="https://github.com/kanch91"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/github.svg"
+                          alt="Card image"
+                          style=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                src="imgs/arrow.png"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 5px;
+                  background-color: white;
+                  border-radius: 20px;
+                "
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const revealerNav = window.revealer({
+          revealElementSelector: ".nav-js",
+          options: {
+            anchorSelector: ".nav-btn-js",
+          },
+        });
+
+        const actionBtn = document.querySelector(".nav-btn-js");
+        actionBtn.addEventListener("click", () => {
+          if (!revealerNav.isRevealed()) {
+            revealerNav.reveal();
+            actionBtn.setAttribute("data-open", true);
+          } else {
+            revealerNav.hide();
+            actionBtn.setAttribute("data-open", false);
+          }
+        });
+      });
+    </script>
+
+    <script>
+      $(".rotate").click(function () {
+        $(this).toggleClass("down");
+      });
+    </script>
+
+    <script>
+      function toggleImage() {
+        var img1 = "imgs/rishi-4.png";
+        var img2 = "imgs/rishi-2.png";
+        var imgElement = document.getElementById("remoji");
+        imgElement.src = imgElement.src === img1 ? img2 : img1;
+      }
+    </script>
+
+    <script>
+      $("#cardbodyhover").click(function () {
+        $("#cardbody").css({
+          opacity: 1,
+          transition: "opacity 0.5s ease-in-out",
+          "-moz-transition": "opacity 0.5s ease-in-out",
+          "-webkit-transition": "opacity 0.5s ease-in-out",
+        });
+      });
+
+      $("#cardbodyhover-1").click(function () {
+        $("#cardbody-1").css({
+          opacity: 1,
+          transition: "opacity 0.5s ease-in-out",
+          "-moz-transition": "opacity 0.5s ease-in-out",
+          "-webkit-transition": "opacity 0.5s ease-in-out",
+        });
+      });
+
+      $("#cardbodyhover-2").click(function () {
+        $("#cardbody-2").css({
+          opacity: 1,
+          transition: "opacity 0.5s ease-in-out",
+          "-moz-transition": "opacity 0.5s ease-in-out",
+          "-webkit-transition": "opacity 0.5s ease-in-out",
+        });
+      });
+
+      $("#cardbodyhover-3").click(function () {
+        $("#cardbody-3").css({
+          opacity: 1,
+          transition: "opacity 0.5s ease-in-out",
+          "-moz-transition": "opacity 0.5s ease-in-out",
+          "-webkit-transition": "opacity 0.5s ease-in-out",
+        });
+      });
+
+      $("#cardbodyhover-4").click(function () {
+        $("#cardbody-4").css({
+          opacity: 1,
+          transition: "opacity 0.5s ease-in-out",
+          "-moz-transition": "opacity 0.5s ease-in-out",
+          "-webkit-transition": "opacity 0.5s ease-in-out",
+        });
+      });
+    </script>
+
+    <script>
+      const words = document.querySelectorAll(".rotator > span");
+
+      let main = gsap.timeline({ repeat: -1 });
+
+      for (let i = 0; i < words.length; i++) {
+        let delay = i - 1;
+        let wordTL = gsap.timeline();
+        if (i !== 0) {
+          wordTL.from(words[i], {
+            duration: 2,
+            yPercent: -100,
+            opacity: 0,
+            ease: "power2.out",
+          });
+        } else {
+          delay += 1;
+          gsap.set(words[0], { opacity: 1, yPercent: 0 });
+        }
+
+        if (i !== words.length - 1) {
+          wordTL.to(words[i], {
+            duration: 2,
+            yPercent: 100,
+            opacity: 0,
+            ease: "power2.out",
+          });
+        }
+        main.add(wordTL, delay);
+      }
+    </script>
+
+    <script>
+      ("use strict");
+      const texts = [
+        "React",
+        "Keras",
+        "Python",
+        "C++",
+        "Git",
+        "SQL",
+        "CSS",
+        "Javascript",
+        "HTML",
+        "Bulma",
+        "Bootstrap",
+        "npm",
+        "NodeJS",
+        "Express",
+        "MongoDB",
+        "Figma",
+        "Jira",
+        "Miro",
+        "Trello",
+        "Wordpress",
+        "R",
+      ];
+      const computePosition = (idx, random = false, size) => {
+        if (random) idx = Math.floor(Math.random() * (texts.length + 1));
+        const phi = Math.acos(-1 + (2 * idx + 1) / texts.length);
+        const theta = Math.sqrt((texts.length + 1) * Math.PI) * phi;
+        return {
+          x: (size * Math.cos(theta) * Math.sin(phi)) / 2,
+          y: (size * Math.sin(theta) * Math.sin(phi)) / 2,
+          z: (size * Math.cos(phi)) / 2,
+        };
+      };
+      const createTag = (idx, text, size) => {
+        const tagRef = React.useRef(null);
+        return Object.assign(
+          {
+            idx: idx,
+            text: text,
+            opacity: 0,
+            filter: "alpha(opacity=0)",
+            transform: "translate3d(-50%, -50%, 0) scale(1)",
+            tagRef: tagRef,
+          },
+          computePosition(idx, false, size)
+        );
+      };
+      const createInitialState = (size) => {
+        return texts.map((text, i) => {
+          return createTag(i, text, size);
+        });
+      };
+      const { radius, maxSpeed, initSpeed, direction } = {
+        radius: 300,
+        maxSpeed: 20,
+        initSpeed: 40,
+        direction: 135,
+      };
+      const size = 1.5 * radius;
+      const depth = 2 * radius;
+      const App = React.memo(() => {
+        const tagCloudRef = React.useRef(null);
+        const [items, setItems] = React.useState(createInitialState(size));
+        const mouseX0 = React.useRef(initSpeed * Math.sin(direction * (Math.PI / 180))); // prettier-ignore
+        const mouseY0 = React.useRef(-initSpeed * Math.cos(direction * (Math.PI / 180))); // prettier-ignore
+        const mouseX = React.useRef(mouseX0.current);
+        const mouseY = React.useRef(mouseY0.current);
+        const next = React.useCallback(() => {
+          const a = -(Math.min(Math.max(-mouseY.current, -size), size) / radius) * maxSpeed; // prettier-ignore
+          const b = (Math.min(Math.max(-mouseX.current, -size), size) / radius) * maxSpeed; // prettier-ignore
+          if (Math.abs(a) <= 0.01 && Math.abs(b) <= 0.01) return; // pause
+          // calculate offset
+          const l = Math.PI / 180;
+          const sc = [
+            Math.sin(a * l),
+            Math.cos(a * l),
+            Math.sin(b * l),
+            Math.cos(b * l),
+          ];
+          setItems((prev) => {
+            const items = prev.map((item) => {
+              var _a;
+              const rx1 = item.x;
+              const ry1 = item.y * sc[1] + item.z * -sc[0];
+              const rz1 = item.y * sc[0] + item.z * sc[1];
+              const rx2 = rx1 * sc[3] + rz1 * sc[2];
+              const ry2 = ry1;
+              const rz2 = rz1 * sc[3] - rx1 * sc[2];
+              const per = (2 * depth) / (2 * depth + rz2);
+              item.scale = Number(per.toFixed(3));
+              let alpha = per * per - 0.25;
+              alpha = Number((alpha > 1 ? 1 : alpha).toFixed(3));
+              if (
+                (_a =
+                  item === null || item === void 0 ? void 0 : item.tagRef) ===
+                  null || _a === void 0
+                  ? void 0
+                  : _a.current
+              ) {
+                const left = (
+                  item.x -
+                  item.tagRef.current.offsetWidth / 2
+                ).toFixed(2);
+                const top = (
+                  item.y -
+                  item.tagRef.current.offsetHeight / 2
+                ).toFixed(2);
+                return Object.assign(Object.assign({}, item), {
+                  x: rx2,
+                  y: ry2,
+                  z: rz2,
+                  opacity: alpha,
+                  transform: `translate3d(${left}px, ${top}px, 0) scale(${item.scale})`,
+                  filter: `alpha(opacity=${100 * alpha})`,
+                });
+              }
+            });
+            return items;
+          });
+        }, []);
+        React.useEffect(() => {
+          if (
+            tagCloudRef === null || tagCloudRef === void 0
+              ? void 0
+              : tagCloudRef.current
+          ) {
+            const interval = setInterval(next, 100);
+            return () => clearInterval(interval);
+          }
+        }, [tagCloudRef]);
+        return React.createElement(
+          "div",
+          {
+            ref: tagCloudRef,
+            className: "tag-cloud",
+            onMouseMove: (ev) => {
+              if (
+                tagCloudRef === null || tagCloudRef === void 0
+                  ? void 0
+                  : tagCloudRef.current
+              ) {
+                const rect = tagCloudRef.current.getBoundingClientRect();
+                mouseX.current =
+                  (ev.clientX - (rect.left + rect.width / 2)) / 5;
+                mouseY.current =
+                  (ev.clientY - (rect.top + rect.height / 2)) / 5;
+              }
+            },
+            style: {
+              position: "relative",
+              width: `${2 * radius}px`,
+              height: `${2 * radius}px`,
+            },
+          },
+          items.map((item) => {
+            return React.createElement(
+              "span",
+              {
+                key: item.idx,
+                className: "tag-cloud__item",
+                ref: item.tagRef,
+                style: {
+                  filter: item.filter,
+                  opacity: item.opacity,
+                  transform: item.transform,
+                },
+              },
+              item.text
+            );
+          })
+        );
+      });
+      ReactDOM.render(
+        React.createElement(App, null),
+        document.getElementById("root")
+      );
+    </script>
+  </body>
+</html>
