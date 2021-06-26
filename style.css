@@ -483,3 +483,51 @@ img {
   transition: all 0.1s;
   will-change: transform, opacity, filter;
 }
+
+@keyframes animatedIIMUN {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+#animate-iimun {
+  background-image: url("imgs/iimun.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  animation: animatedIIMUN 1s linear alternate-reverse;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+#animate-fab {
+  background-image: url("imgs/fab-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  animation: animatedBackground 10s linear alternate-reverse;
+}
+
+@keyframes animatedcolumbia {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+#animate-columbia {
+  background-image: url("imgs/columbia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: animatedcolumbia 20s linear infinite alternate-reverse;
+}

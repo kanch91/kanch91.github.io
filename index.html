@@ -32,12 +32,19 @@
           Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
           sans-serif;
       }
+      .cardbody-hover,
       #cardbody,
       #cardbody-1,
       #cardbody-2,
       #cardbody-3,
       #cardbody-4 {
         opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+      }
+      .cardbody-hover:hover {
+        opacity: 1;
         transition: opacity 0.5s ease-in-out;
         -moz-transition: opacity 0.5s ease-in-out;
         -webkit-transition: opacity 0.5s ease-in-out;
@@ -102,7 +109,7 @@
       </b>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="width: 95vw">
       <div class="row justify-content-center">
         <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
           <div
@@ -128,19 +135,29 @@
             </h1>
 
             <div class="row justify-content-center">
-              <div class="col-sm-7" style="margin: 0.25%; cursor: pointer">
-                <div class="card h-100" style="border-radius: 2rem">
-                  <div class="card-body">
+              <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
+                <div
+                  class="card h-100"
+                  style="border-radius: 2rem"
+                  id="animate-iimun"
+                >
+                  <div
+                    class="card-body cardbody-hover"
+                    style="
+                      background-color: rgba(224, 223, 223, 0.7);
+                      border-radius: 2rem;
+                    "
+                  >
                     <div class="ribbon ribbon-top-left">
                       <span style="background-color: #9a9af7">Experience</span>
                     </div>
                     <h2 class="card-title text-center" style="font-weight: 900">
                       Project Manager
                     </h2>
-                    <h5 class="card-title text-center" style="color: grey">
+                    <h5 class="card-title text-center" style="color: black">
                       I.I.M.U.N.
                     </h5>
-                    <h6 class="card-title text-center" style="color: grey">
+                    <h6 class="card-title text-center" style="color: black">
                       Dec '19 - May '20
                     </h6>
                     <p
@@ -169,9 +186,18 @@
                 </div>
               </div>
 
-              <div class="col-sm-4" style="margin: 0.25%; cursor: pointer">
-                <div class="card h-100" style="border-radius: 2rem">
-                  <div class="card-body">
+              <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+                <div
+                  class="card h-100"
+                  style="
+                    border-radius: 2rem;
+                    background-image: url('imgs/bg-blue.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  "
+                >
+                  <div class="card-body d-flex flex-column">
                     <div class="ribbon ribbon-top-left">
                       <span style="background-color: #9a9af7">Experience</span>
                     </div>
@@ -190,11 +216,15 @@
                     >
                       Worked as an intermediary between PM and the team for
                       Wholechain – a blockchain based traceability solution for
-                      supply chain management. Followed agile scrum methodology
-                      for the project.
+                      supply chain management & Cratylus – a blockchain powered
+                      freight system. Followed agile scrum methodology for the
+                      project's.
                     </p>
                     <a href="https://wholechain.com/"
-                      ><button type="button" class="btn btn-outline-dark">
+                      ><button
+                        type="button"
+                        class="btn btn-outline-dark mt-auto"
+                      >
                         Wholechain
                       </button></a
                     >
@@ -206,40 +236,18 @@
             <br />
 
             <div class="row justify-content-center">
-              <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
-                <div class="card h-100" style="border-radius: 2rem">
-                  <div class="card-body">
-                    <div class="ribbon ribbon-top-right">
-                      <span style="background-color: #c2c2f8">Project</span>
-                    </div>
-                    <h2 class="card-title text-center" style="font-weight: 900">
-                      Find A Bed
-                    </h2>
-                    <h5 class="card-title text-center" style="color: grey">
-                      MERN stack, Heroku
-                    </h5>
-                    <p
-                      class="card-text text-left"
-                      style="color: black; font-size: 1.25rem"
-                    >
-                      Designed & coded a website that became the first National
-                      repository of the Covid centres. Added CRUD
-                      functionalities, multilingual translation using google
-                      translate API, payment using Razorpay API, among other
-                      features.
-                    </p>
-                    <a href="https://www.findabed.in/"
-                      ><button type="button" class="btn btn-outline-dark">
-                        Website
-                      </button></a
-                    >
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
-                <div class="card h-100" style="border-radius: 2rem">
-                  <div class="card-body">
+              <div class="col-sm-4" style="margin: 0.25%; cursor: pointer">
+                <div
+                  class="card h-100"
+                  style="
+                    border-radius: 2rem;
+                    background-image: url('imgs/bg-blue.png');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  "
+                >
+                  <div class="card-body d-flex flex-column">
                     <div class="ribbon ribbon-top-right">
                       <span style="background-color: #c2c2f8">Project</span>
                     </div>
@@ -258,11 +266,72 @@
                       the MMR using various classical (SMA, WMA, CMA, EMA),
                       exponential (SES, DES, TES), statistical models (ARIMA,
                       SARIMAX) & DL methods (LSTM, GRU, RNN) for univariate and
-                      multivariate datasets using Keras API.
+                      multivariate datasets.
                     </p>
                     <a href="https://github.com/kanch91/project-energy"
-                      ><button type="button" class="btn btn-outline-dark">
+                      ><button
+                        type="button"
+                        class="btn btn-outline-dark mt-auto"
+                      >
                         Repository
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-7" style="margin: 0.25%; cursor: pointer">
+                <div
+                  class="card h-100"
+                  style="border-radius: 2rem"
+                  id="animate-fab"
+                >
+                  <div
+                    class="card-body cardbody-hover"
+                    style="
+                      background-color: rgba(224, 223, 223, 0.7);
+                      border-radius: 2rem;
+                    "
+                  >
+                    <div class="ribbon ribbon-top-right">
+                      <span style="background-color: #c2c2f8">Project</span>
+                    </div>
+                    <h2 class="card-title text-center" style="font-weight: 900">
+                      Find A Bed
+                    </h2>
+                    <h5 class="card-title text-center" style="color: black">
+                      MERN stack, Heroku
+                    </h5>
+                    <p
+                      class="card-text text-left"
+                      style="color: black; font-size: 1.25rem"
+                    >
+                      Designed & coded a website that became the first national
+                      repository of the Covid centres in the country. Identified
+                      the pain points, structured the solution & optimised the
+                      website for meeting the needs of the people during the
+                      second-wave. Spearheaded the overall initiative including
+                      the planning & execution of the project, the marketing,
+                      the launches, the weekly releases & all other aspects such
+                      as data gathering & verification, among others. Added CRUD
+                      functionalities, multilingual translation using google
+                      translate API, payment using Razorpay API, chat among
+                      other features.
+                    </p>
+                    <a href="https://www.findabed.in/"
+                      ><button
+                        type="button"
+                        class="btn btn-outline-dark mt-auto"
+                      >
+                        Website
+                      </button></a
+                    >
+                    <a href="https://www.instagram.com/findabed_in/"
+                      ><button
+                        type="button"
+                        class="btn btn-outline-dark mt-auto"
+                      >
+                        Instagram
                       </button></a
                     >
                   </div>
@@ -277,7 +346,7 @@
       <br />
 
       <div class="row justify-content-center">
-        <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+        <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
           <div
             class="card h-100"
             style="
@@ -299,55 +368,101 @@
             >
               Academia
             </h1>
-            <div class="card-body" id="cardbody-1">
+            <div class="card-body d-flex flex-column" id="cardbody-1">
               <div class="ribbon ribbon-top-left">
                 <span style="background-color: #fd1e43">Academia</span>
               </div>
               <div class="row justify-content-center">
-                <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
+                <div class="col-sm-4" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/nmims.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                  >
+                    <div
+                      class="card-body cardbody-hover"
+                      style="
+                        background-color: rgba(138, 138, 138, 0.5);
+                        border-radius: 2rem;
+                      "
+                    >
                       <h2
                         class="card-title text-center"
-                        style="font-weight: 900"
+                        style="font-weight: 900; color: white"
                       >
                         MBA Tech. (Computer Eng.)
                       </h2>
-                      <h5 class="card-title text-center" style="color: grey">
+                      <h5
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
                         NMIMS University
                       </h5>
-                      <h6 class="card-title text-center" style="color: grey">
+                      <h6
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
                         June '17 – June '22
                       </h6>
                       <p
                         class="card-text text-left"
-                        style="color: black; font-size: 1.25rem"
+                        style="font-size: 1.25rem; color: white"
                       >
                         Dual degree in Bachelors of Technology and in Masters of
                         Business Administration
                       </p>
+                      <a
+                        href="https://engineering.nmims.edu/academics/programmes/mba-tech/computer-engineering/"
+                        ><button
+                          type="button"
+                          class="align-self-end btn btn-outline-light mt-auto"
+                        >
+                          Course Details
+                        </button></a
+                      >
                     </div>
                   </div>
                 </div>
 
-                <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
+                <div class="col-sm-4" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="border-radius: 2rem"
+                    id="animate-columbia"
+                  >
+                    <div
+                      class="card-body d-flex flex-column cardbody-hover"
+                      style="
+                        background-color: rgba(138, 138, 138, 0.5);
+                        border-radius: 2rem;
+                      "
+                    >
                       <h2
                         class="card-title text-center"
-                        style="font-weight: 900"
+                        style="font-weight: 900; color: white"
                       >
                         Business Analytics MM
                       </h2>
-                      <h5 class="card-title text-center" style="color: grey">
+                      <h5
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
                         Columbia University on edX
                       </h5>
-                      <h6 class="card-title text-center" style="color: grey">
+                      <h6
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
                         Nov '20 – Sept '21
                       </h6>
                       <p
                         class="card-text text-left"
-                        style="color: black; font-size: 1.25rem"
+                        style="color: white; font-size: 1.25rem"
                       >
                         ➔ Analytics in Python<br />
                         ➔ Data, Models & Decisions in BA<br />
@@ -357,28 +472,96 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <br />
 
-              <div class="row justify-content-center">
-                <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
+                <div class="col-sm-3" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-pink.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: top;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
                       <h2
                         class="card-title text-center"
                         style="font-weight: 900"
                       >
-                        Statistics & Data Science MicroMaster
+                        Web Development
                       </h2>
                       <h5 class="card-title text-center" style="color: grey">
+                        Dr. Angela Yu
+                      </h5>
+                      <div class="text-center">
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          Full stack web development course
+                        </p>
+                        <a
+                          href="https://www.udemy.com/certificate/UC-cdeb6f11-12fb-483d-82a6-6f0b1b20c67c/"
+                          ><button
+                            type="button"
+                            class="align-self-end btn btn-outline-dark mt-auto"
+                          >
+                            Certificate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+
+              <div class="row justify-content-center">
+                <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/mit.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                  >
+                    <div
+                      class="card-body d-flex flex-column cardbody-hover"
+                      style="
+                        background-color: rgba(138, 138, 138, 0.5);
+                        border-radius: 2rem;
+                      "
+                    >
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900; color: white"
+                      >
+                        Statistics & Data Science MicroMaster
+                      </h2>
+                      <h5
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
                         Massachusetts Institute of Technology on edX
                       </h5>
-                      <h6 class="card-title text-center" style="color: grey">
+                      <h6
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
                         Oct '20 – January '22
                       </h6>
                       <p
                         class="card-text text-left"
-                        style="color: black; font-size: 1.25rem"
+                        style="
+                          color: white;
+                          font-size: 1.25rem;
+                          text-shadow: white;
+                        "
                       >
                         ➔ 6.86x: ML w/Python - From linear models to DL<br />
                         ➔ 6.431x: Probability – The Science of Uncertainty &
@@ -390,66 +573,20 @@
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <br />
-
-              <div class="row justify-content-center">
-                <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
-                      <h2
-                        class="card-title text-center"
-                        style="font-weight: 900"
-                      >
-                        Web Development
-                      </h2>
-                      <h5 class="card-title text-center" style="color: grey">
-                        Dr. Angela Yu
-                      </h5>
-                      <div class="text-center">
-                        <a
-                          href="https://www.udemy.com/certificate/UC-cdeb6f11-12fb-483d-82a6-6f0b1b20c67c/"
-                          ><button type="button" class="btn btn-outline-dark">
-                            Certificate
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
-                      <h2
-                        class="card-title text-center"
-                        style="font-weight: 900"
-                      >
-                        Version Control w/Git
-                      </h2>
-                      <h5 class="card-title text-center" style="color: grey">
-                        Atlassian U.
-                      </h5>
-                      <div class="text-center">
-                        <a
-                          href="https://www.coursera.org/account/accomplishments/verify/6TQ4KRQY7AHE"
-                          ><button type="button" class="btn btn-outline-dark">
-                            Certificate
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <br />
-
-              <div class="row justify-content-center">
-                <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
+                <div class="col-sm-3" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-pink.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: bottom;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
                       <h2
                         class="card-title text-center"
                         style="font-weight: 900"
@@ -460,9 +597,61 @@
                         DeepLearning.AI
                       </h5>
                       <div class="text-center">
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          A 5 courses Deep learning specialisation
+                        </p>
                         <a
                           href="https://www.coursera.org/account/accomplishments/verify/6NYYQ7C3LS7F"
-                          ><button type="button" class="btn btn-outline-dark">
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mt-auto"
+                          >
+                            Certificate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-pink.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: bottom;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Version Control w/Git
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Atlassian U.
+                      </h5>
+                      <div class="text-center">
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          A course on various functionalities of Git
+                        </p>
+                        <a
+                          href="https://www.coursera.org/account/accomplishments/verify/6TQ4KRQY7AHE"
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mt-auto"
+                          >
                             Certificate
                           </button></a
                         >
@@ -486,8 +675,10 @@
             </button>
           </div>
         </div>
-
-        <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
+      </div>
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
           <div
             class="card h-100"
             style="
@@ -510,14 +701,24 @@
               >
                 Positions of Responsibility
               </h1>
-              <div class="card-body" id="cardbody-2">
+              <div class="card-body d-flex flex-column" id="cardbody-2">
                 <div class="ribbon ribbon-top-left">
                   <span style="background-color: #fc9b13">Others</span>
                 </div>
                 <div class="row justify-content-center">
                   <div class="col-sm-11" style="margin: 0.25%">
-                    <div class="card h-100" style="border-radius: 2rem">
-                      <div class="card-body">
+                    <div
+                      class="card h-100"
+                      style="
+                        border-radius: 2rem;
+                        background-image: url('imgs/bg-orange.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: top;
+                      "
+                      id="animate-columbia"
+                    >
+                      <div class="card-body d-flex flex-column">
                         <h2
                           class="card-title text-center"
                           style="font-weight: 900"
@@ -559,8 +760,18 @@
 
                 <div class="row justify-content-center">
                   <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
-                    <div class="card h-100" style="border-radius: 2rem">
-                      <div class="card-body">
+                    <div
+                      class="card h-100"
+                      style="
+                        border-radius: 2rem;
+                        background-image: url('imgs/bg-orange.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: bottom;
+                      "
+                      id="animate-columbia"
+                    >
+                      <div class="card-body d-flex flex-column">
                         <h2
                           class="card-title text-center"
                           style="font-weight: 900"
@@ -592,8 +803,18 @@
                   </div>
 
                   <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
-                    <div class="card h-100" style="border-radius: 2rem">
-                      <div class="card-body">
+                    <div
+                      class="card h-100"
+                      style="
+                        border-radius: 2rem;
+                        background-image: url('imgs/bg-orange.png');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: bottom;
+                      "
+                      id="animate-columbia"
+                    >
+                      <div class="card-body d-flex flex-column">
                         <h2
                           class="card-title text-center"
                           style="font-weight: 900"
@@ -665,14 +886,24 @@
             >
               Mini-Projects
             </h1>
-            <div class="card-body" id="cardbody">
+            <div class="card-body d-flex flex-column" id="cardbody">
               <div class="ribbon ribbon-top-left">
                 <span>Mini-Project</span>
               </div>
               <div class="row justify-content-center">
                 <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
                       <h2
                         class="card-title text-center"
                         style="font-weight: 900"
@@ -691,7 +922,10 @@
                         SQLite database using the Python Database API.
                       </p>
                       <a href="https://github.com/kanch91/Python-Project"
-                        ><button type="button" class="btn btn-outline-dark">
+                        ><button
+                          type="button"
+                          class="btn btn-outline-dark mt-auto"
+                        >
                           Repo
                         </button></a
                       >
@@ -700,8 +934,18 @@
                 </div>
 
                 <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
                       <h2
                         class="card-title text-center"
                         style="font-weight: 900"
@@ -720,7 +964,10 @@
                         various test-cases.
                       </p>
                       <a href=""
-                        ><button type="button" class="btn btn-outline-dark">
+                        ><button
+                          type="button"
+                          class="btn btn-outline-dark mt-auto"
+                        >
                           Repo
                         </button></a
                       >
@@ -732,9 +979,19 @@
               <br />
 
               <div class="row justify-content-center">
-                <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
+                <div class="col-sm-4" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
                       <h2
                         class="card-title text-center"
                         style="font-weight: 900"
@@ -758,16 +1015,29 @@
                         ➔ Machine Learning<br />
                       </p>
                       <a href="https://github.com/kanch91/analytics-in-python"
-                        ><button type="button" class="btn btn-outline-dark">
+                        ><button
+                          type="button"
+                          class="btn btn-outline-dark mt-auto"
+                        >
                           Repo
                         </button></a
                       >
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-6" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
+                <div class="col-sm-7" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
                       <h2
                         class="card-title text-center"
                         style="font-weight: 900"
@@ -791,7 +1061,10 @@
                         Q-Learning & Q-Learning with linear approximation<br />
                       </p>
                       <a href="https://github.com/kanch91/ml-projects-6.86x"
-                        ><button type="button" class="btn btn-outline-dark">
+                        ><button
+                          type="button"
+                          class="btn btn-outline-dark mt-auto"
+                        >
                           Repo
                         </button></a
                       >
@@ -804,8 +1077,18 @@
 
               <div class="row justify-content-center">
                 <div class="col-sm-11" style="margin: 0.25%; cursor: pointer">
-                  <div class="card h-100" style="border-radius: 2rem">
-                    <div class="card-body">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.png');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
                       <h2
                         class="card-title text-center"
                         style="font-weight: 900"
@@ -819,10 +1102,10 @@
                         class="card-text text-left"
                         style="color: black; font-size: 1.25rem"
                       >
-                        Flutter Apps, Social Media Bot, numerical methods
-                        algorithms, movie recommender system based on fuzzey
-                        sets and genetic algorithm, various machine learning
-                        models & others
+                        Flutter mini-apps, Social media bots using Twitter API,
+                        numerical methods & algorithms, movie recommender system
+                        based on fuzzey sets and genetic algorithm, various
+                        machine learning models & others
                       </p>
                     </div>
                   </div>
@@ -881,32 +1164,68 @@
                 Social
               </h1>
 
-              <div class="card-body" id="cardbody-3">
+              <div class="card-body d-flex flex-column" id="cardbody-3">
                 <div class="ribbon ribbon-top-left">
                   <span style="background-color: #c071fc">Social</span>
                 </div>
                 <div class="row justify-content-center">
-                  <div class="col-sm-5" style="margin: 0.25%">
+                  <div class="col-sm-2" style="margin: 0.25%">
                     <a href="https://www.linkedin.com/in/rishijain91/"
                       ><div class="card h-100" style="border-radius: 2rem">
                         <img
                           class="card-img"
                           src="imgs/linkedin.svg"
                           alt="Card image"
-                          style=""
                         />
                       </div>
                     </a>
                   </div>
 
-                  <div class="col-sm-5" style="margin: 0.25%">
+                  <div class="col-sm-2" style="margin: 0.25%">
                     <a href="https://github.com/kanch91"
                       ><div class="card h-100" style="border-radius: 2rem">
                         <img
                           class="card-img"
                           src="imgs/github.svg"
                           alt="Card image"
-                          style=""
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-sm-2" style="margin: 0.25%">
+                    <a href="https://www.codechef.com/users/kanch91"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/codechef.png"
+                          alt="Card image"
+                          style="padding: 10%"
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-sm-2" style="margin: 0.25%">
+                    <a href="https://leetcode.com/kanch91/"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/leetcode.png"
+                          alt="Card image"
+                          style="padding: 10%"
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-sm-2" style="margin: 0.25%">
+                    <a href="https://www.hackerrank.com/rishi_jain13"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/hackerrank.png"
+                          alt="Card image"
                         />
                       </div>
                     </a>
