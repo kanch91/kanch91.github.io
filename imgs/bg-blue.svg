@@ -1,17 +1,1 @@
-<svg width="1210" height="1627" viewBox="0 0 1210 1627" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_f)">
-<path d="M520.398 1515.02C738.179 1596.56 980.825 1486.11 1062.36 1268.33V1268.33C1143.9 1050.55 1033.45 807.901 815.673 726.363L571.602 634.982C353.821 553.445 111.175 663.892 29.637 881.673V881.673C-51.9007 1099.45 58.5465 1342.1 276.328 1423.64L520.398 1515.02Z" fill="url(#paint0_radial)"/>
-</g>
-<defs>
-<filter id="filter0_f" x="-604.743" y="0.602051" width="2301.49" height="2148.8" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="243.372" result="effect1_foregroundBlur"/>
-</filter>
-<radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(703.341 947.036) rotate(133.359) scale(327.713 428.802)">
-<stop stop-color="#7C75FF"/>
-<stop offset="0.229167" stop-color="#A282FF"/>
-<stop offset="1" stop-color="#6C78FF" stop-opacity="0.67"/>
-</radialGradient>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1210" height="1627" fill="none" viewBox="0 0 1210 1627"><g filter="url(#filter0_f)"><path fill="url(#paint0_radial)" d="M520.398 1515.02C738.179 1596.56 980.825 1486.11 1062.36 1268.33V1268.33C1143.9 1050.55 1033.45 807.901 815.673 726.363L571.602 634.982C353.821 553.445 111.175 663.892 29.637 881.673V881.673C-51.9007 1099.45 58.5465 1342.1 276.328 1423.64L520.398 1515.02Z"/></g><defs><filter id="filter0_f" width="2301.49" height="2148.8" x="-604.743" y=".602" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" mode="normal" result="shape"/><feGaussianBlur result="effect1_foregroundBlur" stdDeviation="243.372"/></filter><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientTransform="translate(703.341 947.036) rotate(133.359) scale(327.713 428.802)" gradientUnits="userSpaceOnUse"><stop stop-color="#7C75FF"/><stop offset=".229" stop-color="#A282FF"/><stop offset="1" stop-color="#6C78FF" stop-opacity=".67"/></radialGradient></defs></svg>
