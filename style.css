@@ -498,7 +498,7 @@ img {
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
-  animation: animatedIIMUN 1s linear alternate-reverse;
+  animation: animatedIIMUN 0s linear alternate-reverse;
 }
 
 @keyframes animatedBackground {
@@ -514,7 +514,7 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  animation: animatedBackground 10s linear alternate-reverse;
+  animation: animatedBackground 0s linear alternate-reverse;
 }
 
 @keyframes animatedcolumbia {
@@ -530,4 +530,18 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   animation: animatedcolumbia 20s linear infinite alternate-reverse;
+}
+
+@keyframes animatedskills {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+#animate-skills {
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation: animatedskillsa 5s linear infinite alternate-reverse;
 }
