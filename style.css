@@ -543,5 +543,6 @@ img {
 #animate-skills {
   background-size: cover;
   background-repeat: no-repeat;
-  animation: animatedskillsa 5s linear infinite alternate-reverse;
+  background-position: top;
+  animation: animatedskills 20s linear infinite alternate-reverse;
 }
