@@ -31,7 +31,7 @@ header {
   height: 50px;
   border-radius: 50%;
   background-color: white;
-  background-image: url(imgs/nav-icon.png);
+  background-image: url(imgs/nav-icon.webp);
   outline: none;
   background-size: cover;
   border: 0;
@@ -63,7 +63,7 @@ header {
 }
 
 .header__nav {
-  background-image: url("imgs/bg.png");
+  background-image: url("imgs/bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #ffffff;
@@ -493,7 +493,7 @@ img {
   }
 }
 #animate-iimun {
-  background-image: url("imgs/iimun.png");
+  background-image: url("imgs/iimun.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -510,7 +510,7 @@ img {
   }
 }
 #animate-fab {
-  background-image: url("imgs/fab-2.png");
+  background-image: url("imgs/fab-2.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -526,7 +526,7 @@ img {
   }
 }
 #animate-columbia {
-  background-image: url("imgs/columbia.jpg");
+  background-image: url("imgs/columbia.webp");
   background-size: cover;
   background-repeat: no-repeat;
   animation: animatedcolumbia 20s linear infinite alternate-reverse;
