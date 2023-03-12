@@ -123,11 +123,12 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
+  transition: ease 0.5s;
 }
 
 .header__menu-item a:hover {
   font-size: 10vh;
-  transition: ease-in 0.5s;
+  transition: ease 0.5s;
 }
 
 .rotate {
@@ -531,7 +532,7 @@ img {
   }
 }
 #animate-fab {
-  background-image: url("imgs/fab-2.webp");
+  background-image: url("imgs/fab-4.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -566,4 +567,39 @@ img {
   background-repeat: no-repeat;
   background-position: top;
   animation: animatedskills 20s linear infinite alternate-reverse;
+}
+
+
+@keyframes animatedYAI {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+#animate-yai {
+  background-image: url("imgs/yai-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  animation: animatedYAI 0s linear alternate-reverse;
+}
+
+@keyframes animatedwinjit {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+#animate-winjit {
+  background-image: url("imgs/winjit-website.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  animation: animatedwinjit 0s linear alternate-reverse;
 }

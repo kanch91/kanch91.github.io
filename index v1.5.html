@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portfolio website of Rishi Jain consiting of the details of the work experience, projects, academia and others."
+    />
+    <meta name="viewport" content="width=" />
+    <meta
+      http-equiv="Cache-Control"
+      content="public, max-age=31536000, immutable"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/webp" href="imgs/rishi-2.webp" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script defer async src="script.js"></script>
+    <script
+      defer
+      async
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      async
+      src="https://cdn.jsdelivr.net/npm/circular-revealer@0.0.8/dist/index.iife.js"
+    ></script>
+    <script
+      defer
+      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
+    ></script>
+    <!--<script
+      defer
+      async
+      src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js?r=2314"
+    ></script>-->
+    <script
+      defer
+      async
+      src="https://unpkg.com/react@16.7.0-alpha.0/umd/react.production.min.js"
+    ></script>
+    <script
+      defer
+      src="https://unpkg.com/react-dom@16.7.0-alpha.0/umd/react-dom.production.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      body {
+        font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .cardbody-hover
+      /*, #cardbody,
+      #cardbody-1,
+      #cardbody-2,
+      #cardbody-3,
+      #cardbody-4*/ {
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+      }
+      .cardbody-hover:hover {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+        -moz-transition: opacity 0.5s ease-in-out;
+        -webkit-transition: opacity 0.5s ease-in-out;
+      }
+      .btn {
+        margin: 5px;
+      }
+      .card {
+        border: 0;
+      }
+    </style>
+    <title>Rishi Jain || Home Page</title>
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <button
+          class="header__button nav-btn-js rotate"
+          type="button"
+          style="outline: none"
+        ></button>
+        <nav class="header__nav nav-js" data-active="false">
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="pages/experience.html">Experience</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="pages/projects.html">Projects</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="pages/education.html">Education</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="pages/leadership.html">Leadership</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div style="width: inherit; height: 20vh">
+      <p style="text-justify: center; cursor: pointer">
+        <img
+          id="remoji"
+          src="imgs/rishi-2.webp"
+          class="scale-up-center"
+          onclick="toggleImage()"
+          onmouseover="this.src='imgs/rishi-4.webp'"
+          onmouseout="this.src='imgs/rishi-2.webp'"
+          alt="Rishi Jain"
+        />
+      </p>
+    </div>
+
+    <div style="width: 99vw; margin-top: 3%">
+      <p class="line typewriter" style="text-align: center; font-weight: 900">
+        Hi, I'm Rishi
+      </p>
+    </div>
+
+    <div class="Iam" style="width: 99vw">
+      <b>
+        <div class="innerIam">
+          a learner<br />
+          a developer<br />
+          an innovator<br />
+          a team player<br />
+          a problem solver
+        </div>
+      </b>
+    </div>
+
+    <div class="container-fluid" style="width: 95vw">
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #4099ff, #73b4ff);
+              background-image: url('imgs/blue.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1
+              class="card-title text-center"
+              style="
+                font-weight: 1000;
+                color: white;
+                margin: 10px;
+                padding-top: 5px;
+              "
+            >
+              Experience & Projects
+            </h1>
+
+            <div class="row justify-content-center">
+              <div class="col-sm-11" style="margin: 0.25%">
+                <div
+                  class="card h-100"
+                  style="
+                    border-radius: 2rem;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  "
+                  id="imageChange"
+                >
+                  <div class="card-body cardbody-hover"
+                  style="
+                    background-blend-mode: darken;
+                    border-radius: 2rem; cursor: pointer;">
+                    <h2
+                      class="card-title text-center"
+                      style="font-weight: 900; color: white; opacity: 1;"
+                    >
+                      I.I.M.U.N.
+                    </h2>
+                    <h5
+                      class="card-title text-center"
+                      style="color: whitesmoke"
+                    >
+                      Intern - USG - VP - Sr. Vice-President
+                    </h5>
+                    <h6
+                      class="card-title text-center"
+                      style="color: whitesmoke"
+                    >
+                      May '16 – July '21
+                    </h6>
+                    <p
+                      class="card-text text-left"
+                      style="
+                        color: white;
+                        font-size: 1.25rem;
+                        margin-bottom: 40%;
+                      "
+                    >
+                      ➔ Led Substance department by collaborating with other depts. & managed a team focusing on the core product<br />
+                      ➔ Promoted to Core Council over 18 months ahead of schedule - Facilitated the overall functioning & strategy<br />
+                      ➔ Represented the org. in 9 countries + 35 cities & revamped the org. strategy in pandemic (transitioning to digital)<br />
+                      ➔ Identified & spearheaded all technical initiatives including the website & its weekly releases, digital platform, others<br />
+                      <!--Planned the organisation strategy during the pandemic &
+                      restructured the operations to transition to digital
+                      sphere.<br />
+                      ➔ (Youngest) Core Council member: Group responsible for
+                      the overall functioning, deciding & timelining of new
+                      projects, determining key areas of focus, among others.<br />
+                      ➔ Liaised with various luminaries & assisted in organising
+                      many major events such as the annual Championship's,
+                      flagship conference in UN HQ, New York.<br />
+                      ➔ Handled all the technical aspects & projects including
+                      the website and it's weekly updation, digital platform, et
+                      cetera.<br />
+                      ➔ Represented the organisation & led contingents in 9
+                      countries and over 35 cities in India.<br />
+                      ➔ Head of Substance Dept. with a team of over 60 (5 direct
+                      reports) dealing with quality control, training &
+                      research.<br />-->
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br />
+
+            <div class="row justify-content-center">
+              <div class="col-sm-8" style="margin: 0.25%; cursor: pointer">
+                <div
+                  class="card h-100"
+                  style="border-radius: 2rem"
+                  id="animate-iimun"
+                >
+                  <div
+                    class="card-body cardbody-hover"
+                    style="
+                      background-color: rgba(255, 255, 255, 0.9);
+                      border-radius: 2rem;
+                    "
+                  >
+                    <div class="ribbon ribbon-top-right">
+                      <span style="background-color: #9a9af7">Project</span>
+                    </div>
+                    <h2 class="card-title text-center" style="font-weight: 900">
+                      I.I.M.U.N. Website
+                    </h2>
+                    <h5 class="card-title text-center" style="color: gray">
+                      Bootstrap, Bulma, MongoDB, NodeJS, ExpressJS, Heroku
+                    </h5>
+                    <p
+                      class="card-text text-left"
+                      style="color: black; font-size: 1.25rem"
+                    >
+                      Managed a cross-functional team & redesigned the website
+                      of the organisation including both the front-end & the
+                      back-end. Played the role of Lead Developer as well as of
+                      the Project Manager including planning the timeline,
+                      defining the scope, selecting technologies, wire-framing,
+                      designing, documentation, developing, coding, testing,
+                      among others. Reduced the average page load time by 45% - increasing the monthly visits by 6.2 times & improving the overall customer retention.
+                    </p>
+                    <a href="https://kanch91.github.io/iimun-website-desktop/"
+                      ><button type="button" class="btn btn-outline-dark">
+                        Desktop Prototype
+                      </button></a
+                    >
+                    <a href="https://iimun.in/"
+                      ><button type="button" class="btn btn-outline-dark">
+                        Website
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-3" style="margin: 0.25%">
+                <div
+                  class="card h-100"
+                  style="
+                    border-radius: 2rem;
+                    background-image: url('imgs/bg-blue.webp');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  "
+                >
+                  <div class="card-body d-flex flex-column">
+                    <div class="ribbon ribbon-top-right">
+                      <span style="background-color: #9a9af7">Experience</span>
+                    </div>
+                    <h2 class="card-title text-center" style="font-weight: 900">
+                      Project Coordinator
+                    </h2>
+                    <h5 class="card-title text-center" style="color: grey">
+                      Winjit Technologies
+                    </h5>
+                    <h6 class="card-title text-center" style="color: grey">
+                      June '21 - Nov '21
+                    </h6>
+                    <p
+                      class="card-text text-left"
+                      style="color: black; font-size: 1.25rem"
+                    >
+                    Supervised two agile cross-functional teams of BA’s, designers, QA’s, developers to meet the project(s) goals. Managed 6 features from concept-to-launch for Wholechain + led all aspects of PM end-to-end
+                    for Cratylus & coordinated w/various stakeholders incl. international clients.
+                    </p>
+
+                    <a href="https://wholechain.com/"
+                      ><button
+                        type="button"
+                        class="btn btn-outline-dark mt-auto"
+                      >
+                        Wholechain
+                      </button></a
+                    >
+                    <div
+                      style="
+                        text-align: center;
+                        align-self: center;
+                        margin: auto;
+                      "
+                    >
+                      <br />
+                      <img
+                        src="imgs/winjit.svg"
+                        class="card-img-bottom"
+                        alt="Winjit"
+                        style="object-fit: contain"
+                      />
+                      <br /><br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+
+            <div class="row justify-content-center">
+              <div class="col-sm-3" style="margin: 0.25%">
+                <div
+                  class="card h-100"
+                  style="
+                    border-radius: 2rem;
+                    background-image: url('imgs/bg-blue.webp');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  "
+                >
+                  <div class="card-body d-flex flex-column">
+                    <div class="ribbon ribbon-top-right">
+                      <span style="background-color: #c2c2f8">Project</span>
+                    </div>
+                    <h2 class="card-title text-center" style="font-weight: 900">
+                      Project Energy [Capstone]
+                    </h2>
+                    <h5 class="card-title text-center" style="color: grey">
+                      Python, Keras, statsmodel, NumPy, SciPy, Pandas,
+                      Scikit-learn, matplotlib
+                    </h5>
+                    <p
+                      class="card-text text-left"
+                      style="color: black; font-size: 1.25rem"
+                    >
+                      Time-series forecasting of electricity load consumption in
+                      the MMR using MA's, ES methods, 
+                      statistical methods (ARIMA, SARIMAX) & DL models (LSTM,
+                      GRU, RNN) for univariate & multivariate datasets.
+                    </p>
+                    <a href="https://github.com/kanch91/project-energy"
+                      ><button
+                        type="button"
+                        class="btn btn-outline-dark mt-auto"
+                      >
+                        Repository
+                      </button></a
+                    >
+                    <div
+                      style="
+                        text-align: center;
+                        align-self: center;
+                        margin: auto;
+                      "
+                    >
+                      <br />
+                      <img
+                        src="imgs/energy.svg"
+                        class="card-img-bottom"
+                        alt="Project Energy"
+                        style="object-fit: contain"
+                      />
+                      <br /><br /><br />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-8" style="margin: 0.25%; cursor: pointer">
+                <div
+                  class="card h-100"
+                  style="border-radius: 2rem"
+                  id="animate-fab"
+                >
+                  <div
+                    class="card-body cardbody-hover"
+                    style="
+                      background-color: rgba(255, 255, 255, 0.9);
+                      border-radius: 2rem;
+                    "
+                  >
+                    <div class="ribbon ribbon-top-right">
+                      <span style="background-color: #c2c2f8">Project</span>
+                    </div>
+                    <h2 class="card-title text-center" style="font-weight: 900">
+                      Find A Bed
+                    </h2>
+                    <h5 class="card-title text-center" style="color: black">
+                      MERN stack, Heroku
+                    </h5>
+                    <p
+                      class="card-text text-left"
+                      style="color: black; font-size: 1.25rem"
+                    >
+                      ➔ Designed & coded a dynamic website which became the 1st
+                      national repository of the Covid centres in the
+                      country.<br />
+                      ➔ Reached over 191K organic unique visits in the first
+                      week of the launch.<br />
+                      ➔ Identified the pain points of the product, mapped user
+                      journeys, defined key metrics, gathered data for informed
+                      decisions & prepared mock-ups.<br />
+                      ➔ Spearheaded the initiative including the planning,
+                      execution, marketing, launches, operations & others.<br />
+                      ➔ Added CRUD functionalities, multilingual translation,
+                      payment gateway, chatbot among other features.
+                    </p>
+                    <a href="https://www.findabed.in/"
+                      ><button
+                        type="button"
+                        class="btn btn-outline-dark mt-auto"
+                      >
+                        Website
+                      </button></a
+                    >
+                    <a href="https://www.instagram.com/findabed_in/"
+                      ><button
+                        type="button"
+                        class="btn btn-outline-dark mt-auto"
+                      >
+                        Instagram
+                      </button></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br />
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #ff5370, #ff869a);
+              background-image: url('imgs/red.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1
+              class="card-title text-center"
+              style="
+                font-weight: 1000;
+                color: white;
+                margin: 10px;
+                padding-top: 5px;
+              "
+            >
+              Academia
+            </h1>
+            <div class="card-body d-flex flex-column" id="cardbody-1">
+              <div class="ribbon ribbon-top-left">
+                <span style="background-color: #fd1e43">Academia</span>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-sm-4" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/nmims.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                  >
+                    <div
+                      class="card-body cardbody-hover"
+                      style="
+                        background-color: rgba(131, 131, 131, 0.8);
+                        border-radius: 2rem;
+                      "
+                    >
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900; color: white"
+                      >
+                        MBA (Marketing) + BTech. (Computer Eng.)
+                      </h2>
+                      <h5
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
+                        NMIMS University
+                      </h5>
+                      <h6
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
+                        June '17 – June '22
+                      </h6>
+                      <p
+                        class="card-text text-left"
+                        style="font-size: 1.25rem; color: white"
+                      >
+                        Dual degree in Bachelors of Technology and in Masters of
+                        Business Administration
+                      </p>
+                      <a
+                        href="https://engineering.nmims.edu/academics/programmes/mba-tech/computer-engineering/"
+                        ><button
+                          type="button"
+                          class="align-self-end btn btn-outline-light mt-auto"
+                        >
+                          Course Details
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="border-radius: 2rem"
+                    id="animate-columbia"
+                  >
+                    <div
+                      class="card-body cardbody-hover"
+                      style="
+                        background-color: rgba(131, 131, 131, 0.8);
+                        border-radius: 2rem;
+                      "
+                    >
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900; color: white"
+                      >
+                        Business Analytics MM
+                      </h2>
+                      <h5
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
+                        Columbia University on edX
+                      </h5>
+                      <h6
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
+                        Nov '20 – Sept '21
+                      </h6>
+                      <p
+                        class="card-text text-left"
+                        style="color: white; font-size: 1.25rem"
+                      >
+                        ➔ BAMM.101x: Analytics in Python<br />
+                        ➔ BAMM.102x: Data, Models & Decisions in BA<br />
+                        ➔ BAMM.103x: Demand & Supply Analytics<br />
+                        ➔ BAMM.104x: Marketing Analytics<br />
+                      </p>
+                      <a
+                        href="https://courses.edx.org/certificates/6cec3c3fde1a45349909e575ee1e54ff"
+                        ><button
+                          type="button"
+                          class="align-self-end btn btn-outline-light mt-auto"
+                        >
+                          BAMM.101x
+                        </button></a
+                      >
+                      <a href="https://courses.edx.org/certificates/82144a5a03564fe09acc54b3eecc10cf"
+                      ><button
+                          type="button"
+                          class="align-self-end btn btn-outline-light mt-auto"
+                        >
+                          BAMM.102x
+                        </button></a
+                      >
+                      <a
+                        href="https://courses.edx.org/certificates/4fcd6120d7d2415badbaafd526034fe7"
+                        ><button
+                          type="button"
+                          class="align-self-end btn btn-outline-light mt-auto"
+                        >
+                          BAMM.103x
+                        </button></a
+                      >
+                      <a
+                        href="https://courses.edx.org/certificates/61488727eff0456da81608b72da6c732"
+                        ><button
+                          type="button"
+                          class="align-self-end btn btn-outline-light mt-auto"
+                        >
+                          BAMM.104x
+                        </button></a
+                      >
+                      <a
+                        href="https://credentials.edx.org/credentials/f338d5fda9ba45828002f679fc923bc2/"
+                        ><button
+                          type="button"
+                          class="align-self-end btn btn-outline-light mt-auto"
+                        >
+                          MicroMaster Certificate
+                        </button></a
+                      >
+                      <a
+                        href="https://www.cvn.columbia.edu/content/micromasters-program-business-analytics"
+                        ><button
+                          type="button"
+                          class="align-self-end btn btn-outline-light mt-auto"
+                        >
+                          Course Website
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3" style="margin: 0.25%">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-red.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: bottom;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Version Control w/Git
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Atlassian U.
+                      </h5>
+                      <div class="text-center">
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          A course on various functionalities of Git version
+                          control system.
+                        </p>
+                        <a
+                          href="https://www.coursera.org/account/accomplishments/verify/6TQ4KRQY7AHE"
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mt-auto"
+                          >
+                            Certificate
+                          </button></a
+                        >
+                        <a
+                          href="https://www.coursera.org/learn/version-control-with-git"
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mt-auto"
+                          >
+                            Course Website
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+
+              <div class="row justify-content-center">
+                
+
+                <div class="col-sm-3" style="margin: 0.25%">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-red.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: top;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Web Development
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Dr. Angela Yu
+                      </h5>
+                      <div class="text-center">
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          Full stack web development course including HTML, CSS,
+                          Javascript, Node, React, MongoDB and others.
+                        </p>
+                        <a
+                          href="https://www.udemy.com/certificate/UC-cdeb6f11-12fb-483d-82a6-6f0b1b20c67c/"
+                          ><button
+                            type="button"
+                            class="align-self-end btn btn-outline-dark mt-auto"
+                          >
+                            Certificate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-3" style="margin: 0.25%">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/deeplearning-ai.jpg');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: bottom;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column cardbody-hover" style="
+                    background-color: rgba(131, 131, 131, 0.5);
+                    border-radius: 2rem;
+                  ">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Deep Learning Specialization
+                      </h2>
+                      <h5 class="card-title text-center" style="color: rgb(255, 255, 255)">
+                        DeepLearning.AI
+                      </h5>
+                      <div class="text-center">
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          Covers RNN, CNN, LSTM, transformers, among
+                          others in 5 courses. Utilised TF to tackle real-world cases such
+                          as speech recognition, music synthesis, chatbots,
+                          machine translation, NLP, and more.
+                        </p>
+                        <a
+                          href="https://www.coursera.org/account/accomplishments/specialization/KQVXT9HSF3HH"
+                          ><button
+                            type="button"
+                            class="btn btn-outline-dark mt-auto"
+                          >
+                            Certificate
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-5" style="margin: 0.25%; cursor: pointer">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/mit.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                  >
+                    <div
+                      class="card-body cardbody-hover"
+                      style="
+                        background-color: rgba(131, 131, 131, 0.8);
+                        border-radius: 2rem;
+                      "
+                    >
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900; color: white"
+                      >
+                        Statistics & Data Science MicroMaster
+                      </h2>
+                      <h5
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
+                        Massachusetts Institute of Technology on edX
+                      </h5>
+                      <h6
+                        class="card-title text-center"
+                        style="color: whitesmoke"
+                      >
+                        September '20 – January '22
+                      </h6>
+                      <p
+                        class="card-text text-left"
+                        style="
+                          color: white;
+                          font-size: 1.25rem;
+                          text-shadow: white;
+                        "
+                      >
+                        ➔ 6.431x: Probability – The Science of Uncertainty &
+                        Data<br />
+                        ➔ 18.6501x: Fundamental of Statistics<br />
+                        ➔ 6.86x: ML w/Python - From linear models to DL<br />
+                        ➔ 6.419x: Data Analysis – Statistical Modeling &
+                        Computation in Applications<br />
+                      </p>
+                      <a
+                        href="https://courses.edx.org/certificates/6753c8d14885472e87d0170028f21690"
+                        ><button
+                          type="button"
+                          class="btn btn-outline-light mt-auto"
+                        >
+                          6.86x Certificate
+                        </button></a
+                      >
+                      <a
+                        href="https://courses.edx.org/certificates/b312fb3dbc674d41be69821e15ae7d6d"
+                        ><button
+                          type="button"
+                          class="btn btn-outline-light mt-auto"
+                        >
+                          6.431x Certificate
+                        </button></a
+                      >
+                      <a
+                        href="https://courses.edx.org/certificates/40e6241a46b54871b98147d916f37bfe"
+                        ><button
+                          type="button"
+                          class="btn btn-outline-light mt-auto"
+                        >
+                          18.6501x Certificate
+                        </button></a
+                      >
+                      <a href="https://micromasters.mit.edu/ds/">
+                        <button
+                          type="button"
+                          class="btn btn-outline-light mt-auto"
+                        >
+                          Course Website
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--<button type="button" class="btn text-left" id="cardbodyhover-1">
+              <img
+                src="imgs/arrow.webp"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 5px;
+                  background-color: white;
+                  border-radius: 20px;
+                "
+                alt=""
+              />
+            </button>-->
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #ffb64d, #ffcb80);
+              background-image: url('imgs/orange.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <button type="button" class="btn text-left" id="cardbodyhover-2">
+              <h1
+                class="card-title text-center"
+                style="
+                  font-weight: 1000;
+                  color: white;
+                  margin: 10px;
+                  padding-top: 5px;
+                "
+              >
+                Leadership
+              </h1>
+              <div class="card-body d-flex flex-column" id="cardbody-2">
+                <div class="ribbon ribbon-top-left">
+                  <span style="background-color: #fc9b13">Others</span>
+                </div>
+
+                <div class="row justify-content-center">
+                  <div class="col-sm-6" style="margin: 0.25%">
+                    <div
+                      class="card h-100"
+                      style="
+                        border-radius: 2rem;
+                        background-image: url('imgs/stuco.svg');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                      "
+                    >
+                      <div
+                        class="card-body cardbody-hover"
+                        style="
+                          background-color: rgba(255, 253, 253, 0.6);
+                          border-radius: 2rem;
+                        "
+                      >
+                        <h2
+                          class="card-title text-center"
+                          style="font-weight: 900"
+                        >
+                          Student Council
+                        </h2>
+                        <h5 class="card-title text-center" style="color: grey">
+                          President
+                        </h5>
+                        <h6 class="card-title text-center" style="color: grey">
+                          2019 – 2020
+                        </h6>
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          ➔ Set Vision & oversaw the functioning of all the
+                          student societies. Increased participation by 400%
+                          YoY.<br />
+                          ➔ Facilitated monthly workshops, weekly activities to
+                          build a coding culture & skill development.<br />
+                          ➔ Organised Guest Lectures, weekly competitions,
+                          elocutions & activities such as NPTEL, mentoring, etc.
+                          <br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-5" style="margin: 0.25%">
+                    <div
+                      class="card h-100"
+                      style="
+                        border-radius: 2rem;
+                        background-image: url('imgs/sports.webp');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: bottom;
+                      "
+                      id="animate-columbia"
+                    >
+                      <div
+                        class="card-body cardbody-hover"
+                        style="
+                          background-color: rgba(255, 253, 253, 0.6);
+                          border-radius: 2rem;
+                        "
+                      >
+                        <h2
+                          class="card-title text-center"
+                          style="font-weight: 900"
+                        >
+                          Sports Committee
+                        </h2>
+                        <h5 class="card-title text-center" style="color: grey">
+                          President
+                        </h5>
+                        <h6 class="card-title text-center" style="color: grey">
+                          2018 – 2019
+                        </h6>
+                        <p
+                          class="card-text text-left"
+                          style="color: black; font-size: 1.25rem"
+                        >
+                          ➔ Set-up & oversaw the functioning of the entire
+                          committee and it’s verticals/departments.<br />
+                          ➔ Promote holistic development via Sports by
+                          organising Monthly Activities & regular events.<br />
+                          ➔ Organised the Annual Sports Festival, Prabalya, at
+                          4x the scale w/3x participation of previous year.<br />
+
+                          <br />
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <img
+                src="imgs/arrow.webp"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 5px;
+                  background-color: white;
+                  border-radius: 20px;
+                "
+              />-->
+            </button>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background-image: url('imgs/bg-blueskills.svg');
+            "
+            id="animate-skills"
+          >
+            <h1
+              class="card-title text-center"
+              style="
+                font-weight: 1000;
+                color: white;
+                margin: 10px;
+                padding-top: 5px;
+                margin-bottom: 80vh;
+              "
+            >
+              Skills & Tools
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #2ed8b6, #59e0c5);
+              background-image: url('imgs/green.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <h1
+              class="card-title text-center"
+              style="
+                font-weight: 1000;
+                color: white;
+                margin: 10px;
+                padding-top: 5px;
+              "
+            >
+              Mini-Projects
+            </h1>
+            <div class="card-body d-flex flex-column" id="cardbody">
+              <div class="ribbon ribbon-top-left">
+                <span>Mini-Project</span>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-sm-6" style="margin: 0.25%">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        CRUD App
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Python, SQLite database, TkInter GUI
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        Designed an interface using TkInter GUI with CRUD
+                        functionalities for the details of the students in the
+                        SQLite database using the Python Database API.
+                      </p>
+                      <a href="https://github.com/kanch91/Python-Project"
+                        ><button
+                          type="button"
+                          class="btn btn-outline-dark mt-auto"
+                        >
+                          Repo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-5" style="margin: 0.25%">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Android App
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Java, Android Studio
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        Developed an app to emulate the enigma machine using a
+                        substitution cipher for encryption/decryption & designed
+                        various test-cases.
+                      </p>
+                      <a href=""
+                        ><button
+                          type="button"
+                          class="btn btn-outline-dark mt-auto"
+                        >
+                          Repo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="row justify-content-center">
+                <div class="col-sm-5" style="margin: 0.25%">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        BAMM.101x
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Python mini-projects
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        ➔ Pandas<br />
+                        ➔ Word count<br />
+                        ➔ Web scraping<br />
+                        ➔ SQL using Python<br />
+                        ➔ Machine Learning<br />
+                        ➔ Network Algorithms<br />
+                        ➔ String manipulation<br />
+                        ➔ Text-mining wikipedia<br />
+                      </p>
+                      <a href="https://github.com/kanch91/analytics-in-python"
+                        ><button
+                          type="button"
+                          class="btn btn-outline-dark mt-auto"
+                        >
+                          Repo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6" style="margin: 0.25%">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        6.86x
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        ML mini-projects in Python
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        Set of 5 projects completed as a part of the 6.86x
+                        course on Machine Learning – <br />
+                        ➔ Numpy & debugging<br />
+                        ➔ Digit Recognition (2 parts)<br />
+                        ➔ Automatic Review Analyzer<br />
+                        ➔ Collaborative Filtering via Guassian Mixture<br />
+                        ➔ Text based game using deep Q-network, tabular
+                        Q-Learning & Q-Learning with linear approximation<br />
+                      </p>
+                      <a href="https://github.com/kanch91/ml-projects-6.86x"
+                        ><button
+                          type="button"
+                          class="btn btn-outline-dark mt-auto"
+                        >
+                          Repo
+                        </button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br />
+
+              <div class="row justify-content-center">
+                <div class="col-sm-11" style="margin: 0.25%">
+                  <div
+                    class="card h-100"
+                    style="
+                      border-radius: 2rem;
+                      background-image: url('imgs/bg-green.webp');
+                      background-size: cover;
+                      background-repeat: no-repeat;
+                      background-position: center;
+                    "
+                    id="animate-columbia"
+                  >
+                    <div class="card-body d-flex flex-column">
+                      <h2
+                        class="card-title text-center"
+                        style="font-weight: 900"
+                      >
+                        Other mini-projects
+                      </h2>
+                      <h5 class="card-title text-center" style="color: grey">
+                        Python, Flutter, R
+                      </h5>
+                      <p
+                        class="card-text text-left"
+                        style="color: black; font-size: 1.25rem"
+                      >
+                        Flutter mini-apps, Social media bots using Twitter API,
+                        numerical methods & algorithms, movie recommender system
+                        based on fuzzey sets and genetic algorithm, various
+                        machine learning models & others
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--<button type="button" class="btn text-left" id="cardbodyhover">
+              <img
+                src="imgs/arrow.webp"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 5px;
+                  background-color: white;
+                  border-radius: 20px;
+                "
+              />
+            </button>-->
+          </div>
+        </div>
+      </div>
+
+      <!--<div class="col-sm-4" style="margin: 0.25%; ">-->
+      <!--<img
+          src="imgs/skills.svg"
+          class="card-img img-fluid"
+          alt="Skills"
+          style="max-width: 90%"
+        />-->
+      <!--<div id="root"></div>
+      </div>-->
+
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-sm-11" style="margin: 0.25%">
+          <div
+            class="card h-100"
+            style="
+              border-radius: 2rem;
+              background: linear-gradient(45deg, #d08bf8, #d9aaf5);
+              background-image: url('imgs/pink.svg');
+              background-size: cover;
+              background-repeat: no-repeat;
+            "
+          >
+            <button type="button" class="btn text-left" id="cardbodyhover-3">
+              <h1
+                class="card-title text-center"
+                style="
+                  font-weight: 1000;
+                  color: white;
+                  margin: 10px;
+                  padding-top: 5px;
+                "
+              >
+                Social
+              </h1>
+
+              <div class="card-body d-flex flex-column" id="cardbody-3">
+                <div class="ribbon ribbon-top-left">
+                  <span style="background-color: #c071fc">Social</span>
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-sm-2" style="margin: 0.25%">
+                    <a href="https://www.linkedin.com/in/rishijain91/"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/linkedin.svg"
+                          alt="LinkedIN"
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-sm-2" style="margin: 0.25%">
+                    <a href="https://github.com/kanch91"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/github.svg"
+                          alt="GitHub"
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-sm-2" style="margin: 0.25%">
+                    <a href="https://www.codechef.com/users/kanch91"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/codechef.svg"
+                          alt="CodeChef"
+                          style="padding: 10%"
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-sm-2" style="margin: 0.25%">
+                    <a href="https://leetcode.com/kanch91/"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/leetcode.svg"
+                          alt="Leetcode"
+                          style="padding: 10%"
+                        />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="col-sm-2" style="margin: 0.25%">
+                    <a href="https://www.hackerrank.com/kanch91"
+                      ><div class="card h-100" style="border-radius: 2rem">
+                        <img
+                          class="card-img"
+                          src="imgs/hackerrank.svg"
+                          alt="HackerRank"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!--<img
+                src="imgs/arrow.webp"
+                style="
+                  width: 40px;
+                  height: 40px;
+                  padding: 5px;
+                  background-color: white;
+                  border-radius: 20px;
+                "
+              />-->
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <script>
+      $().ready(function () {
+        var i = 0;
+
+        var images = [
+          "imgs/cmls.webp",
+          "imgs/iimun-4.webp",
+          "imgs/iimun-3.webp",
+          "imgs/iimun-2.webp",
+        ];
+
+        var image = $("#imageChange");
+        image.css("background-image", "url('imgs/iimun-2.webp')");
+        setInterval(function () {
+          image.fadeOut(500, function () {
+            image.css("background-image", "url(" + images[i++] + ")");
+            image.fadeIn(500);
+          });
+          if (i == images.length) i = 0;
+        }, 40000);
+      });
+    </script>
+  </body>
+</html>

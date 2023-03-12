@@ -23,8 +23,8 @@ $(".rotate").click(function () {
 });
 
 function toggleImage() {
-  var img1 = "imgs/rishi-4.png";
-  var img2 = "imgs/rishi-2.png";
+  var img1 = "imgs/rishi-3.png";
+  var img2 = "imgs/rishi-4.png";
   var imgElement = document.getElementById("remoji");
   imgElement.src = imgElement.src === img1 ? img2 : img1;
 }
